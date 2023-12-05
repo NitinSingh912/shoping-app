@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: 13%;
+    width: 100%;
+    background-color: #231F20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    color: white;
+    padding-left: 30px;
+}
+
+header button {
+    display: block;
+    margin-right: 30px;
+    border: none;
+    background-color: #231F20;
+    transition: all 0.3s ease-in-out;
+
+}
+
+header button:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+}
+
+header button img {
+    height: 50px;
+    width: 50px;
+}
+
+.items-in-cart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    z-index: 3;
+    right: 38px;
+    bottom: 32px;
+    padding: 0;
+    border-radius: 50%;
+    padding: 0;
+  
+    
+
+}
+
+.cart {
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    width: 350px;
+    z-index: 100;
+    background-color: white;
+    right: 0;
+    border: 1px solid black;
+
+}
+
+.close-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 30px;
+    border-radius: 6px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.category-buttons button {
+    height: 28px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+}
+
+.category-buttons button:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.display-items {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    
+    padding: 20px 100px;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.active {
+    background-color: rgba(135, 207, 235, 0.561);
+}
+
+.display-items div {
+    margin-top: 20px;
+    height: 450px;
+    width: 350px;
+    box-shadow: 2px 5px 6px rgba(135, 207, 235, 0.568);
+}
+
+.display-items div .img-portion {
+    padding-top: 5px;
+    height: 55%;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+.display-items div .img-portion img {
+    height: 100%;
+    width: 100%;
+}
+
+.display-items div .content-portion {
+    height: 45%;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: none;
+    padding-top: 15px;
+}
+
+.display-items h2,
+h3,
+h4 {
+    font-size: 20px;
+    color: rgba(0, 0, 255, 0.53);
+}
+
+.add-to-cart-button {
+    width: 70%;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.add-to-cart-button:hover {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #231F20;
+}
+
+.cart-img-portion {
+
+    padding-top: 5px;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: none;
+    padding: 5px 10px;
+}
+
+.cart-img-portion img {
+    height: 100%;
+    width: 100%;
+}
+
+.cart-content-portion {
+    height: 45%;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: none;
+    padding-top: 10px;
+}
+
+.inc-dec-div {
+    display: flex;
+    gap: 5px;
+}
+
+.inc-dec-div button {
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.inc-dec-div button:hover {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .display-items {
+        padding: 0;
+        min-height: 500px;
+        width: 360px;
+        display: flex;
+        padding: 10px 20px;
+        
+        flex-wrap: wrap;
+       
+    
+    }
+    .display-items div {
+        margin-top: 20px;
+        height: 450px;
+        width: 650px ;
+        box-shadow: 2px 5px 6px rgba(135, 207, 235, 0.568);
+    }
+   .womens-clothes-items{
+    font-size: 10px;
+   }
+   .mens-clothes-items{
+    font-size: 11px;
+   }
+   .electronics-items{
+    font-size: 12px;
+   }
+  }
+  
